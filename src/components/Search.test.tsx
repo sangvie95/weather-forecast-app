@@ -4,6 +4,8 @@ import Search from './Search';
 import { Provider } from 'react-redux';
 import { store } from '../store';
 
+jest.mock('../services/api/weather');
+
 describe('Search component', () => {
   it('should show city input', () => {
     render(
